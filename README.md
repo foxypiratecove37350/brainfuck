@@ -14,7 +14,7 @@ brainfuck file... -o file...
 
 The interactive console can be accessed by passing no arguments.    
 
-We also provide a C api:
+We also provide a C API:
 
 ```c
 #include <stdio.h>
