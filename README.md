@@ -1,19 +1,22 @@
-brainfuck
-[![Build Status](https://github.com/fabianishere/brainfuck/workflows/Build/badge.svg)](https://github.com/fabianishere/brainfuck/actions?query=workflow%3ABuild)
-===========
-Brainfuck interpreter written in C.
+# brainfuck [![Build Status](https://github.com/foxypiratecove37350/brainfuck/workflows/Build/badge.svg)](https://github.com/foxypiratecove37350/brainfuck/actions?query=workflow%3ABuild)
+Brainfuck interpreter and compiler written in C.
 
 ## Usage
-    brainfuck [-veh] file...
+```
+brainfuck [-veh] file...
 	-e --eval	run code directly
 	-v --version	show version information
-	-h --help	show a help message.
+    -h --help	show a help message.
+
+brainfuck file... -o file...
+	-o --output	compile code to the output file in argument.
+```
 
 The interactive console can be accessed by passing no arguments.    
 
 We also provide a C api:
 
-``` c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <brainfuck.h>
